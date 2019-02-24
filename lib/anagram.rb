@@ -8,9 +8,8 @@ class Anagram
   end
 
   def match(array)
-    winners = []
-    individual_words = array.split(",")
-    individual_words.collect do |match|
+    anagrams = []
+    array.collect do |match|
       if match.split("").sort == @word.split("").sort
         winners << match
       end
