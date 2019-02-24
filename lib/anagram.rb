@@ -11,7 +11,7 @@ class Anagram
     anagrams = []
     array.collect do |match|
       if match.split("").sort == @word.split("").sort
-        winners << match
+        anagrams << match
       end
     end
     anagrams
