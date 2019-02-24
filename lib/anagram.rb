@@ -14,7 +14,7 @@ class Anagram
         winners << match
       end
     end
-    match
+    anagrams
   end
 
 end
